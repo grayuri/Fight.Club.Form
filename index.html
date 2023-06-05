@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="sass/main.css">
+  <title>Club's Form</title>
+</head>
+<body>
+  <div id="global-div">
+    <section id="form-section">
+      <div id="logo">
+        <img src="assets/images/logo.png" alt="">
+      </div>
+      <form action="#" autocomplete="off">
+        <div class="input-div">
+          <label for="name">NAME</label>
+          <input type="text" id="name" placeholder="Your name...">
+        </div>
+  
+        <div class="input-div">
+          <label for="lastname">LAST NAME</label>
+          <input type="text" id="lastname" placeholder="Your last name...">
+        </div>
+  
+        <div class="input-div">
+          <label for="birth">BIRTH</label>
+          <input type="date" id="birth">
+        </div>
+  
+        <div class="gender-group">
+          <span>GENDER</span>
+          <div class="gender-input">
+            <input type="radio" name="sex" id="male">
+            <label for="sex">Male</label>
+          </div>
+          <div class="gender-input">
+            <input type="radio" name="sex" id="female">
+            <label for="sex">Female</label>
+          </div>
+        </div>
+  
+        <div class="input-div">
+          <label for="weight">WEIGHT (KG)</label>
+          <input type="number" id="weight" placeholder="00.00 kg">
+        </div>
+  
+        <div class="input-div">
+          <label for="height">HEIGHT (CM)</label>
+          <input type="number" id="height" placeholder="000 cm">
+        </div>
+  
+        <div class="input-div">
+          <label for="email">E-MAIL</label>
+          <input type="email" id="email" placeholder="email@domain.com">
+        </div>
+  
+        <div class="input-div">
+          <label for="phone">PHONE</label>
+          <input type="number" id="phone" placeholder="(DDD) X XXXX-XXXX">
+        </div>
+  
+        <div class="select-div">
+          <span>STATE</span>
+          <select name="state" id="state">
+            <option></option>
+          </select>
+        </div>
+  
+        <div class="select-div">
+          <span>CITY</span>
+          <select name="city" id="city">
+          </select>
+        </div>
+  
+        <div class="input-div" id="observation-area">
+          <label for="">OBSERVATION</label>
+          <textarea name="observation" id="observation" cols="30" rows="10" placeholder="Write about your motivation here"></textarea>
+        </div>
+      </form>
+      <button id="register-button">
+        <a href="#">REGISTER</a>
+      </button>
+    </section>
+
+    <section class="slide-images">
+    </section>
+  </div>
+</body>
+<script src="scripts/main.js"></script>
+<script src="scripts/locale.js"></script>
+</html>

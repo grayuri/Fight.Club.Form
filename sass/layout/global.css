@@ -1,0 +1,44 @@
+#global-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+
+.slide-images {
+  width: 30%;
+  height: 100vh;
+  background: url(../../assets/images/image-1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+#logo > img {
+  width: 200px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  height: 100vh;
+  width: 70%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=global.css.map */

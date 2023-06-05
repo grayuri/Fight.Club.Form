@@ -1,0 +1,22 @@
+.gender-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 18px 32px;
+  align-items: center;
+  padding: 0;
+}
+
+.gender-group>span {
+  grid-area: span;
+  grid-row: 1;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  grid-area: radio;
+  grid-column: auto;
+  grid-row: 2;
+  height: 32px;
+}

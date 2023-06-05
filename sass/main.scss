@@ -1,0 +1,10 @@
+@import 'common/global.scss';
+@import 'components/global.scss';
+@import 'layout/global.scss';
+@import 'pages/global.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
