@@ -12,6 +12,7 @@
 .input-div, .select-div {
   display: flex;
   flex-direction: column;
+  margin: 8px 0;
 }
 
 .input-div > input, .select-div select {
@@ -19,6 +20,7 @@
   padding: 4px 8px;
   border-radius: 4px;
   border: 1px solid #767676;
+  margin: 2px 0;
 }
 
 .gender-group {
@@ -37,7 +39,7 @@
 .gender-input {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   grid-area: radio;
   grid-column: auto;
   grid-row: 2;
@@ -46,7 +48,7 @@
 
 #register-button {
   width: 80%;
-  height: 64px;
+  height: 48px;
   border-radius: 4px;
   border: 1px solid #767676;
 }/*# sourceMappingURL=global.css.map */
