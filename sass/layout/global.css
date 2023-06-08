@@ -5,23 +5,17 @@
   height: 100vh;
 }
 
-.slide-images {
-  width: 30%;
-  height: 100vh;
-  background: url(../../assets/images/image-1.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-
 #logo > img {
   width: 180px;
+  margin-bottom: -16px;
 }
 
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 8px;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -31,7 +25,8 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
   padding: 16px;
   height: 100vh;
   width: 70%;
@@ -40,6 +35,29 @@ form {
   z-index: 5;
   color: white;
   font-family: "Geologica", sans-serif;
+}
+
+.slide-images {
+  width: 30%;
+  height: 100vh;
+  background-color: #143832;
+  position: relative;
+}
+
+.slide-images img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2000ms;
+  position: absolute;
+}
+.slide-images img.selected-image {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+  transition: opacity 2000ms;
 }
 
 * {

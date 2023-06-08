@@ -9,18 +9,19 @@
   padding: 8px;
   border-radius: 4px;
   resize: none;
+  margin: 2px 0;
+  border: 2px solid $light-green-club;
 }
 
 .input-div, .select-div {
   display: flex;
   flex-direction: column;
-  margin: 8px 0;
 }
 
 .input-div>input, .select-div select {
   height: 32px;
   padding: 4px 8px;
   border-radius: 4px;
-  border: 1px solid #767676;
+  border: 2px solid $light-green-club;
   margin: 2px 0;
 }
