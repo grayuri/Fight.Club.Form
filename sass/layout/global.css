@@ -31,7 +31,7 @@ form {
   height: 100vh;
   width: 70%;
   background: #2B786A;
-  background: linear-gradient(90deg, #143832 0%, #2B786A 50%, #143832 100%);
+  background: linear-gradient(90deg, #005d59 0%, #2B786A 50%, #005d59 100%);
   background-color: #2B786A;
   box-shadow: 0 4px 24px 8px rgba(0, 0, 0, 0.5);
   z-index: 5;
@@ -43,7 +43,7 @@ form {
 .slide-images {
   width: 30%;
   height: 100vh;
-  background-color: #143832;
+  background-color: #005d59;
   position: relative;
 }
 

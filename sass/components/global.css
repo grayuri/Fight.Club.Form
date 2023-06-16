@@ -64,7 +64,7 @@
   font-weight: 700;
 }
 #register-button:hover, #register-button:active {
-  background-color: #EB86B5;
+  background-color: #f092b5;
   border: 2px solid white;
   transition: all ease-in-out 0.24s;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
