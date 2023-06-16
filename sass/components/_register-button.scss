@@ -5,7 +5,7 @@
   height: 48px;
   border-radius: 4px;
   border: 2px solid white;
-  background-color: $pink-club;
+  background: $pink-club;
   cursor: pointer;
   transition: all ease-in-out 0.16s;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
@@ -18,10 +18,9 @@
   }
 
   &:hover, &:active {
-    background-color: $dark-pink-club;
-    border: 2px solid $pink-club;
+    background-color: $light-pink-club;
+    border: 2px solid white;
     transition: all ease-in-out 0.24s;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
   }
-
 }

@@ -1,0 +1,12 @@
+@import '../common/variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include standart-linear-grandient($dark-green-club, $green-club);
+}
+

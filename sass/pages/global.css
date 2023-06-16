@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2B786A;
+  background: linear-gradient(90deg, #143832 0%, #2B786A 50%, #143832 100%);
+  background-color: #2B786A;
+}/*# sourceMappingURL=global.css.map */

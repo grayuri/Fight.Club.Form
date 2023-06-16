@@ -11,9 +11,11 @@
   height: 100vh;
   width: 70%;
 
-  background-color: $dark-green-club;
+ 
+  @include standart-linear-grandient($dark-green-club, $green-club);
   box-shadow: 0 4px 24px 8px rgba(0, 0, 0, 0.5);
   z-index: 5;
   color: white;
-  font-family: 'Geologica', sans-serif;
+  font-family: "Geologica", sans-serif;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
 }

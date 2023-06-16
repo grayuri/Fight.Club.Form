@@ -52,7 +52,7 @@
   height: 48px;
   border-radius: 4px;
   border: 2px solid white;
-  background-color: #de7eaa;
+  background: #de7eaa;
   cursor: pointer;
   transition: all ease-in-out 0.16s;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
@@ -64,10 +64,10 @@
   font-weight: 700;
 }
 #register-button:hover, #register-button:active {
-  background-color: #b11d3a;
-  border: 2px solid #de7eaa;
+  background-color: #EB86B5;
+  border: 2px solid white;
   transition: all ease-in-out 0.24s;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
 }
 
 #global-div {
@@ -102,11 +102,14 @@ form {
   padding: 16px;
   height: 100vh;
   width: 70%;
-  background-color: #143832;
+  background: #2B786A;
+  background: linear-gradient(90deg, #143832 0%, #2B786A 50%, #143832 100%);
+  background-color: #2B786A;
   box-shadow: 0 4px 24px 8px rgba(0, 0, 0, 0.5);
   z-index: 5;
   color: white;
   font-family: "Geologica", sans-serif;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .slide-images {
@@ -136,6 +139,18 @@ form {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2B786A;
+  background: linear-gradient(90deg, #143832 0%, #2B786A 50%, #143832 100%);
+  background-color: #2B786A;
 }
 
 * {

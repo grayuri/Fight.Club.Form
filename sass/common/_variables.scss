@@ -1,13 +1,33 @@
-$green-club: #2B786A;
 $dark-green-club: #143832;
+$dark-green-club-2: #225e53;
+$green-club: #2B786A;
 $light-green-club: #47C4AD;
 
 $black-club: #0b1f1b;
+$light-black-club: #12332C;
 
+$dark-red-club: #9E4145; 
 $red-club: #B84B51;
-$dark-red-club: #6B3135; 
+$light-red-club: #C45156;
 
+$dark-pink-club: #C47097;
 $pink-club: #de7eaa;
-$dark-pink-club: #b11d3a;
+$light-pink-club:#EB86B5;
 
-$light-purple: #C15AC4;
+$dark-purple-club: #A84FAB;
+$purple: #C15AC4;
+$light-purple-club: #CD60D1;
+
+//--------------------------------------------------------- //
+
+@mixin standart-linear-grandient($darkColor, $lightColor) {
+  background: $lightColor;
+  background: linear-gradient(90deg, $darkColor 0%, $lightColor 50%, $darkColor 100%);
+  background-color: $lightColor;
+}
+
+@mixin standart-radial-grandient($darkColor, $lightColor) {
+  background: $lightColor;
+  background: linear-gradient(90deg, $darkColor 0%, $lightColor 50%, $darkColor 100%);
+  background-color: $lightColor;
+}
