@@ -1,0 +1,18 @@
+@import '../common/variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Geologica', sans-serif;
+}
+
+#global-before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  @include standart-linear-grandient($dark-black-club, $black-club);
+}

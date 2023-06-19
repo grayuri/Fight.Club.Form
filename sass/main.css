@@ -141,17 +141,14 @@ form {
   box-sizing: border-box;
 }
 
-:root {
-  font-family: "Geologica", sans-serif;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
 }
 
-body {
+#global-after {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,6 +225,25 @@ body {
 
 .colored-text {
   color: #C15AC4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+
+#global-before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background: #12332C;
+  background: linear-gradient(90deg, #0b1f1b 0%, #12332C 50%, #0b1f1b 100%);
+  background-color: #12332C;
 }
 
 * {

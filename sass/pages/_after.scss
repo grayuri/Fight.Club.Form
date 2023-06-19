@@ -1,16 +1,13 @@
 @import '../common/variables';
 
-:root {
-  font-family: 'Geologica', sans-serif;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Geologica', sans-serif;
 }
 
-body {
+#global-after {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,13 +32,13 @@ body {
 
   #title {
     font-size: 32px;
-    color: $black-club;
+    color: $dark-black-club;
   }
 
   #words {
     margin-top: -24px;
     font-size: 18px;
-    color: $black-club;
+    color: $dark-black-club;
     text-align: justify;
   }
 }
