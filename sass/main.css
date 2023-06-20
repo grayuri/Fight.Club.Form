@@ -241,9 +241,116 @@ form {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  background: #12332C;
-  background: linear-gradient(90deg, #0b1f1b 0%, #12332C 50%, #0b1f1b 100%);
-  background-color: #12332C;
+  background: #0b1f1b;
+  background: linear-gradient(90deg, #000e05 0%, #0b1f1b 50%, #000e05 100%);
+  background-color: #0b1f1b;
+}
+
+#rules-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  height: 430px;
+  padding: 24px;
+  border-radius: 8px;
+  border: 2px solid #A84FAB;
+  box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.25);
+  background: #000e05;
+  background: linear-gradient(90deg, #000300 0%, #000e05 50%, #000300 100%);
+  background-color: #000e05;
+}
+
+#progress-step-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+#progress-step-bar .steps-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: #f37ed4;
+  background: linear-gradient(90deg, #C15AC4 0%, #f37ed4 50%, #C15AC4 100%);
+  background-color: #f37ed4;
+}
+#progress-step-bar:before {
+  content: "";
+  top: 50%;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  z-index: -1;
+  background: #f37ed4;
+  background: linear-gradient(90deg, #C15AC4 0%, #f37ed4 50%, #C15AC4 100%);
+  background-color: #f37ed4;
+}
+
+.form-step {
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.form-step.active {
+  display: flex;
+  opacity: 1;
+}
+.form-step .rule-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+.form-step .rule-legend .rule-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+}
+.form-step .rule-legend .description {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.buttons-section {
+  display: flex;
+  justify-self: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+.buttons-section .next-step-button {
+  float: right;
+  width: 35%;
+  height: 48px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #A84FAB;
+  background: #f37ed4;
+  background: linear-gradient(90deg, #C15AC4 0%, #f37ed4 50%, #C15AC4 100%);
+  background-color: #f37ed4;
+}
+.buttons-section .previous-step-button {
+  float: left;
+  width: 35%;
+  height: 48px;
+  border-radius: 4px;
+  background: none;
+  color: #f37ed4;
+  border: 2px solid #f37ed4;
+  cursor: pointer;
+}
+.buttons-section .previous-step-button:hover {
+  background-color: rgba(243, 126, 212, 0.15);
 }
 
 * {
