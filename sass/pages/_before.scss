@@ -46,9 +46,34 @@
     align-items: center;
     padding: 8px;
     border-radius: 50%;
+    border: 2px solid $light-purple-club;
     width: 32px;
     height: 32px;
-    @include standart-linear-grandient($purple-club, $light-purple-club);
+    color: $light-purple-club;
+    @include standart-linear-grandient($dark-black, $black);
+
+    .check-content {
+      display: none;
+    }
+
+    &.active {
+      color: $black;
+      // 🗸
+      @include standart-linear-grandient($purple-club, $light-purple-club);
+    }
+
+    &.done {
+      color: $black;
+      @include standart-linear-grandient($purple-club, $light-purple-club);
+
+      & .text-content {
+        display: none;
+      }
+
+      & .check-content {
+        display: block;
+      }
+    }
   }
 
   &:before {
@@ -60,6 +85,7 @@
     z-index: -1;
     @include standart-linear-grandient($purple-club, $light-purple-club)
   }
+
 }
 
 .form-step {
@@ -106,8 +132,14 @@
     height: 48px;
     border-radius: 4px;
     cursor: pointer;
+    color: $black;
     border: 2px solid $dark-purple-club;
     @include standart-linear-grandient($purple-club, $light-purple-club);
+
+    a {
+      text-decoration: none;
+      color: $black;
+    }
   }
 
   .previous-step-button {
