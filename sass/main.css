@@ -48,14 +48,16 @@
 }
 
 #register-button {
-  width: 80%;
-  height: 48px;
+  width: 100%;
+  height: 56px;
   border-radius: 4px;
   border: 2px solid white;
   background: #de7eaa;
   cursor: pointer;
   transition: all ease-in-out 0.16s;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  grid-column: span 2;
+  margin-top: 16px;
 }
 #register-button a {
   color: white;
@@ -79,7 +81,7 @@
 
 #logo > img {
   width: 180px;
-  margin-bottom: -16px;
+  margin-bottom: -18px;
 }
 
 form {
@@ -112,6 +114,14 @@ form {
   border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+@media (max-width: 750px) {
+  .slide-images {
+    display: none;
+  }
+  #form-section {
+    width: 100%;
+  }
+}
 .slide-images {
   width: 30%;
   height: 100vh;

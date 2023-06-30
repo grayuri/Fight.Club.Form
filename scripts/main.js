@@ -1,17 +1,33 @@
-const slider = document.querySelector('.slide-images');
-const images = document.querySelectorAll('.slide-images img');
-const maxImages = images.length;
-let currentImage = 0;
+const form = document.getElementById('form')
+const inputName = document.getElementById('name')
+const inputLastName = document.getElementById('lastname')
+const inputBirth = document.getElementById('birth')
+const inputWeight = document.getElementById('weight')
+const inputHeight = document.getElementById('height')
+const inputEmail = document.getElementById('email')
+const inputPhone = document.getElementById('phone')
+const inputState = document.getElementById('state')
+const inputCity = document.getElementById('city')
+const inputObservation = document.getElementById('observation')
 
-function slide() {
-  currentImage = currentImage == maxImages ? 0 : ++currentImage;
-  if (currentImage > 0) { images[currentImage - 1].classList.remove('selected-image') };
-  if (currentImage == maxImages) { currentImage = 0 };
-  images[currentImage].classList.add('selected-image');
+function getUserInformations() {
+  const userInformations = {
+    name: inputName.value,
+    lastName: inputLastName.value,
+    birth: inputBirth.value,
+    weight: inputWeight.value,
+    height: inputHeight.value,
+    email: inputEmail.value,
+    phone: inputPhone.value,
+    state: inputState.value,
+    city: inputCity.value,
+    observation: inputObservation.value,
+  }
+
+  return console.log(userInformations)
 }
 
-function start() {
-  setInterval(() => { slide() }, 8000)
-};
-
-window.addEventListener('load', start());
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  getUserInformations()
+})

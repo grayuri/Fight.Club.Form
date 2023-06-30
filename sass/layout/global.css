@@ -7,7 +7,7 @@
 
 #logo > img {
   width: 180px;
-  margin-bottom: -16px;
+  margin-bottom: -18px;
 }
 
 form {
@@ -40,6 +40,14 @@ form {
   border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+@media (max-width: 750px) {
+  .slide-images {
+    display: none;
+  }
+  #form-section {
+    width: 100%;
+  }
+}
 .slide-images {
   width: 30%;
   height: 100vh;

@@ -20,7 +20,7 @@
       <div id="logo">
         <img src="assets/images/logo.png" alt="">
       </div>
-      <form action="#" autocomplete="off">
+      <form action="#" autocomplete="off" id="form">
         <div class="input-div">
           <label for="name">NAME</label>
           <input type="text" id="name" placeholder="Your name...">
@@ -86,10 +86,10 @@
           <textarea name="observation" id="observation" cols="30" rows="10"
             placeholder="Write about your motivation here"></textarea>
         </div>
+        <button id="register-button" type="submit">
+          <a href="#">REGISTER</a>
+        </button>
       </form>
-      <button id="register-button" type="submit">
-        <a href="after.html">REGISTER</a>
-      </button>
     </section>
 
     <section class="slide-images">
@@ -103,7 +103,8 @@
     </section>
   </div>
 </body>
-<script src="scripts/main.js"></script>
+<script src="scripts/slider.js"></script>
 <script src="scripts/locale.js"></script>
+<script type="module" src="scripts/main.js"></script>
 
 </html>
