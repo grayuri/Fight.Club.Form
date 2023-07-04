@@ -9,6 +9,8 @@ const inputPhone = document.getElementById('phone')
 const inputState = document.getElementById('state')
 const inputCity = document.getElementById('city')
 const inputObservation = document.getElementById('observation')
+const globalDivForm = document.getElementById('global-div')
+const globalAfter = document.getElementById('global-after')
 
 function getUserInformations() {
   const userInformations = {
@@ -27,7 +29,14 @@ function getUserInformations() {
   return console.log(userInformations)
 }
 
+function showAfterSection() {
+  globalDivForm.classList.add('hidden')
+  globalAfter.classList.remove('hidden')
+}
+
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   getUserInformations()
+  showAfterSection()
+  window.location.href = '../after.html'
 })

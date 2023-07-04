@@ -59,9 +59,8 @@
   grid-column: span 2;
   margin-top: 16px;
 }
-#register-button a {
+#register-button span {
   color: white;
-  text-decoration: none;
   font-size: 1.4em;
   font-weight: 700;
 }
