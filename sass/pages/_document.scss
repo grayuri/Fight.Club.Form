@@ -97,6 +97,7 @@ header {
   justify-content: space-around;
   border-left: 2px solid $dark-black;
   padding-left: 16px;
+  width: 100%;
 }
 
 .user-datas {
@@ -104,6 +105,7 @@ header {
     border: 2px solid $dark-black;
     border-radius: 8px;
     padding: 8px;
+    width: 100%;
   }
 }
 

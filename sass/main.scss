@@ -12,3 +12,13 @@
 .hidden {
   display: none;
 }
+
+@media print {
+  #global-div, #global-after, #print-page {
+    display: none;
+  }
+
+  #print-page.toPrint {
+    display: flex;
+  }
+}
