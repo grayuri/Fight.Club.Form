@@ -22,69 +22,62 @@
       </div>
       <form action="#" autocomplete="off" id="form">
         <div class="input-div">
-          <label for="name">NAME</label>
-          <input type="text" id="name" placeholder="Your name...">
+          <label for="name">FIRST NAME</label>
+          <input type="text" id="name" placeholder="Your name..." minlength="3" maxlength="15">
         </div>
 
         <div class="input-div">
           <label for="lastname">LAST NAME</label>
-          <input type="text" id="lastname" placeholder="Your last name...">
+          <input type="text" id="lastname" placeholder="Your last name..." required minlength="3" maxlength="15">
         </div>
 
         <div class="input-div">
           <label for="birth">BIRTH</label>
-          <input type="date" id="birth">
+          <input type="date" id="birth" required>
         </div>
 
-        <div class="gender-group">
-          <span>GENDER</span>
-          <div class="gender-input">
-            <input type="radio" name="sex" id="male">
-            <label for="sex">Male</label>
-          </div>
-          <div class="gender-input">
-            <input type="radio" name="sex" id="female">
-            <label for="sex">Female</label>
-          </div>
+        <div class="input-div">
+          <label for="image">IMAGE</label>
+          <input type="file" id="image" required>
+          <span id="select-image-btn">Select Image</span>
         </div>
 
         <div class="input-div">
           <label for="weight">WEIGHT (KG)</label>
-          <input type="number" id="weight" placeholder="00.00 kg">
+          <input type="number" id="weight" placeholder="00.00 kg" required min="1" max="350">
         </div>
 
         <div class="input-div">
           <label for="height">HEIGHT (CM)</label>
-          <input type="number" id="height" placeholder="000 cm">
+          <input type="number" id="height" placeholder="000 cm" required min="1" max="250">
         </div>
 
         <div class="input-div">
           <label for="email">E-MAIL</label>
-          <input type="email" id="email" placeholder="email@domain.com">
+          <input type="email" id="email" placeholder="email@domain.com" required>
         </div>
 
         <div class="input-div">
           <label for="phone">PHONE</label>
-          <input type="tel" id="phone" placeholder="(DDD) X XXXX-XXXX">
+          <input type="number" id="phone" placeholder="(DDD) X XXXX-XXXX" required minlength="11" maxlength="11">
         </div>
 
         <div class="select-div">
           <span>STATE</span>
-          <select name="state" id="state">
+          <select name="state" id="state" required title="Select your state here.">
             <option></option>
           </select>
         </div>
 
         <div class="select-div">
           <span>CITY</span>
-          <select name="city" id="city">
+          <select name="city" id="city" required title="Select your city here."> 
           </select>
         </div>
 
         <div class="input-div" id="observation-area">
           <label for="">OBSERVATION</label>
-          <textarea name="observation" id="observation" cols="30" rows="10"
-            placeholder="Write about your motivation here"></textarea>
+          <textarea name="observation" id="observation" placeholder="Write about your motivation here" required></textarea>
         </div>
         <button id="register-button" type="submit">
           <span>REGISTER</span>

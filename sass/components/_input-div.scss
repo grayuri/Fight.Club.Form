@@ -16,6 +16,11 @@
 .input-div, .select-div {
   display: flex;
   flex-direction: column;
+
+  &:focus {
+
+    outline: red;
+  }
 }
 
 .input-div>input, .select-div select {
@@ -24,4 +29,40 @@
   border-radius: 4px;
   border: 2px solid $light-green-club;
   margin: 2px 0;
+  color: $dark-black-club;
 }
+
+.input-div {
+  position: relative;
+}
+
+.input-div>#image {
+  position: relative;
+  height: 32px;
+  width: 118px;
+  padding: 4px 0;
+  margin: 2px 0;
+  border: none;
+  opacity: 0;
+  z-index: 10;
+}
+
+
+#select-image-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  vertical-align: center;
+  width: 118px;
+  height: 32px;
+  bottom: 2px;
+  border: 2px solid $light-green-club;
+  border-radius: 4px;
+  color: white;
+  @include standart-linear-grandient($dark-black-club, $black-club);
+  z-index:5;
+}
+
+

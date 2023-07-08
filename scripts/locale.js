@@ -6,7 +6,7 @@ state.addEventListener('change', async () => {
   const request = await fetch(citiesUrl);
   const response = await request.json();
 
-  let options = '<option>...</option>';
+  let options = '<option></option>';
   response.forEach(city => {
     options += `<option>${city.nome}</option>`;
   });
@@ -19,7 +19,7 @@ window.addEventListener('load', async () => {
   const request = await fetch(statesUrl);
   const response = await request.json();
 
-  let options = '<option>...</option>';
+  let options = '<option></option>';
   response.forEach(state => {
     options += `<option>${state.sigla}</option>`;
   });
