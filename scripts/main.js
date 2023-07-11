@@ -20,6 +20,7 @@ const selectImageButton = document.getElementById('select-image-btn')
 const printPage = document.getElementById('print-page')
 const userDataInputs = document.querySelectorAll('.user-datas>p')
 const userImage = document.querySelector('#user-image>img')
+const userQrCode = document.querySelector('#qr-code>img')
 const userName = userDataInputs[0]
 const userBirth = userDataInputs[1]
 const userEmail = userDataInputs[2]
@@ -70,38 +71,73 @@ inputImage.addEventListener('change', (e) => {
   selectImageButton.textContent = 'Selected!'
 })
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault()
-  
-  // Date Formatation
-  const datebirth = new Date(inputBirth.value);
-  const formatedBirth = (new Intl.DateTimeFormat('pt-br')).format(datebirth);
+function getUserAge(datebirth) {
+  const birth = datebirth.getFullYear()
+  let presentTime = new Date().getFullYear()
+  let age = presentTime - birth
 
-  // Height Formatation
-  let heightCm = inputHeight.value;
+  return age
+}
+
+function formatDatebirth(date) {
+  const datebirth = new Date(date);
+  const formatedBirth = (new Intl.DateTimeFormat('pt-br')).format(datebirth);
+  const age = getUserAge(datebirth)
+
+  return (`${formatedBirth} (${age} years)`) 
+}
+
+function formatHeight(height) {
+  let heightCm = height;
   let heightArray = Array.from(heightCm.toString())
   heightArray[0] += "."
   let heightM = heightArray.reduce((accum, value) => accum + value)
 
-  //Phone-number Formatation
-  //https://www.ctasoftware.com.br/blog/formatar-telefone-em-javascript/#:~:text=M%C3%A9todo%20para%20formatar%20telefone%20com%208%20ou%209,8%29%3B%20%7D%20else%20if%20%28length%20%3D%3D%3D%209%29%20%7B
+  return heightM
+}
+
+function formatPhoneNumber(number) {
+  const crudeNumber = (81987363068).toString()
+  const DDD = crudeNumber.substring(0, 2)
+  const numberNine = crudeNumber.substring(2,3)
+  const firstPart = crudeNumber.substring(3,7)
+  const secondPart = crudeNumber.substring(7,11)
+  const completeNumber = `(${DDD}) ${numberNine} ${firstPart}-${secondPart}`
+
+  return completeNumber
+}
+
+function setUserQrCode(informations) {
+  const gChartAPI = 'https://chart.googleapis.com/chart?cht=qr&chs=160x160&chl='
+  const qrCodeContent = gChartAPI + encodeURIComponent(informations)
+  userQrCode.src = qrCodeContent
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  
+  const formatedBirth = formatDatebirth(inputBirth.value)
+  const formatedHeight = formatHeight(inputHeight.value)
+  const formatedPhoneNumber = formatPhoneNumber(inputPhone.value)
 
   const userInformations = {
     name: inputName.value,
     lastName: inputLastName.value,
     birth: formatedBirth,
     weight: inputWeight.value,
-    height: heightM,
+    height: formatedHeight,
     email: inputEmail.value,
-    phone: inputPhone.value,
+    phone: formatedPhoneNumber,
     state: inputState.value,
     city: inputCity.value,
     observation: inputObservation.value,
   }
 
+  setUserQrCode(userInformations)
   setUserInformations(userInformations)
   showAfterSection()
   addClassToPrint()
-  
   getPdfButton.addEventListener('click', () => window.print())
 })
+
+
