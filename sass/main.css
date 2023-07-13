@@ -14,6 +14,7 @@
 .input-div, .select-div {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .input-div:focus, .select-div:focus {
   outline: red;
@@ -123,7 +124,6 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
 }
 
 #logo > img {
@@ -146,6 +146,14 @@ form {
   width: 80%;
 }
 
+@media (max-width: 450px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
 #form-section {
   display: flex;
   flex-direction: column;
@@ -153,7 +161,6 @@ form {
   justify-content: center;
   gap: 24px;
   padding: 16px;
-  height: 100vh;
   width: 70%;
   background: #2B786A;
   background: linear-gradient(90deg, #005d59 0%, #2B786A 50%, #005d59 100%);
@@ -292,6 +299,15 @@ form {
   display: none;
 }
 
+@media (max-width: 400px) {
+  #container {
+    width: 90%;
+  }
+  #get-pdf a {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -446,6 +462,24 @@ form {
   background-color: rgba(243, 126, 212, 0.15);
 }
 
+#global-before.hidden {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  #rules-form {
+    width: 90%;
+  }
+  #progress-step-bar {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    row-gap: 4px;
+  }
+  #progress-step-bar:before {
+    display: none;
+  }
+}
 body {
   display: flex;
   justify-content: center;

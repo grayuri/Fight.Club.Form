@@ -7,3 +7,12 @@ form {
   align-items: center;
   width: 80%;
 }
+
+@media (max-width: 450px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}

@@ -92,3 +92,18 @@
 #global-after.hidden {
   display: none;
 }
+
+@media (max-width: 400px) {
+  #container {
+    width: 90%;
+  }
+
+  #get-pdf {
+    a {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    
+  }
+}

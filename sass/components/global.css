@@ -14,6 +14,7 @@
 .input-div, .select-div {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .input-div:focus, .select-div:focus {
   outline: red;

@@ -157,3 +157,24 @@
     }
   }
 }
+
+#global-before.hidden {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  #rules-form {
+    width: 90%;
+  }
+
+  #progress-step-bar {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    row-gap: 4px;
+
+    &:before {
+      display: none;
+    }
+  }
+}

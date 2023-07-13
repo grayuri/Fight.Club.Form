@@ -9,18 +9,169 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Club Form</title>
 </head>
 <style>
   * { font-family: 'Geologica', sans-serif; }
 </style>
 <body>
-  <div id="global-div">
+  <div id="global-before">
+    <section id="rules-form">
+      <div id="progress-step-bar">
+        <div class="steps-section active">
+          <span class="text-content">B</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+        <div class="steps-section">
+          <span class="text-content">1</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+        <div class="steps-section">
+          <span class="text-content">2</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+        <div class="steps-section">
+          <span class="text-content">3</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+        <div class="steps-section">
+          <span class="text-content">4</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+        <div class="steps-section">
+          <span class="text-content">5</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+        <div class="steps-section">
+          
+          <span class="text-content">6</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+        <div class="steps-section">
+          <span class="text-content">7</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+        <div class="steps-section">
+          <span class="text-content">8</span>
+          <span class="material-symbols-outlined check-content">done</span>
+        </div>
+      </div>
+      <div class="form-step active">
+        <div class="rule-legend">
+          <h1 class="rule-title">Before everything, </h1>
+          <p class="description">we need to talk about the rules of the club. So... Let's begin!</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" style="opacity: 0; pointer-events: none;">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="rule-legend">
+          <h1 class="rule-title">First Rule of The Club is: </h1>
+          <hr>
+          <p class="description">You do not talk about the club!</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" data-action="prev">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="rule-legend">
+          <h1 class="rule-title">Second Rule of The Club is: </h1>
+          <hr>
+          <p class="description">YOU DO NOT TALK ABOUT THE CLUB !!!</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" data-action="prev">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="rule-legend">
+          <h1 class="rule-title">Third Rule of The Club is: </h1>
+          <hr>
+          <p class="description">If someone says "Stop!", or is weak or fall apart, the fight is over!</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" data-action="prev">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="rule-legend">
+          <h1 class="rule-title">Fourth Rule of The Club is: </h1>
+          <hr>
+          <p class="description">Only two folks for fight.</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" data-action="prev">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="rule-legend">
+          <h1 class="rule-title">Fifth Rule of The Club is: </h1>
+          <hr>
+          <p class="description">One fight at a time.</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" data-action="prev">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="rule-legend">
+          <h1 class="rule-title">Sixth Rule of The Club is: </h1>
+          <hr>
+          <p class="description">You have to fight without shoes and shirts.</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" data-action="prev">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="rule-legend">
+          <h1 class="rule-title">Seventh Rule of The Club is: </h1>
+          <hr>
+          <p class="description">The fights will last as long as it takes.</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" data-action="prev">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="rule-legend">
+          <h1 class="rule-title">Eigth Rule of The Club is: </h1>
+          <hr>
+          <p class="description">If it's your first night on the fight club, you have to fight!</p>
+        </div>
+        <div class="buttons-section">
+          <button class="previous-step-button" data-action="prev">PREVIOUS</button>
+          <button class="next-step-button" data-action="next">NEXT</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="global-div" class="hidden">
     <section id="form-section">
       <div id="logo">
         <img src="assets/images/logo.png" alt="">
       </div>
-      <form action="#" autocomplete="off" id="form">
+      <form action="#" autocomplete="off" id="form" class="main-form">
         <div class="input-div">
           <label for="name">FIRST NAME</label>
           <input type="text" id="name" placeholder="Your name..." minlength="3" maxlength="15">
@@ -173,8 +324,9 @@
     </footer>
   </section>
 </body>
-<script src="scripts/slider.js"></script>
-<script src="scripts/locale.js"></script>
-<script src="scripts/main.js"></script>
+<script src="scripts/rules-form.js" defer></script>
+<script src="scripts/main.js" defer></script>
+<script src="scripts/slider.js" defer></script>
+<script src="scripts/locale.js" defer></script>
 
 </html>

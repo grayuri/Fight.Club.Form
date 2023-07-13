@@ -1,8 +1,10 @@
-let currentStep = 0;
-const formSteps = document.querySelectorAll('.form-step');
-const form = document.querySelector('#rules-form');
+let currentStep = 0
+const formSteps = document.querySelectorAll('.form-step')
+const globalBefore = document.getElementById('global-before')
+const globalDiv = document.getElementById('global-div')
+const rulesForm = document.querySelector('#rules-form')
 
-form.addEventListener('click', e => {
+rulesForm.addEventListener('click', e => {
   if (!e.target.matches('[data-action]')) return
 
   const actions = {
@@ -15,25 +17,26 @@ form.addEventListener('click', e => {
   }
 
   // Note something about this two lines below ---- |
-  const action = e.target.dataset.action;
-  actions[action](); // ***Dynamic*** acess
+  const action = e.target.dataset.action
+  actions[action]() // ***Dynamic*** acess
   // ---------------------------------------------- |
 
-  updateActiveStep();
-  updateProgresStep();
+  updateActiveStep()
+  updateProgresStep()
 })
 
 function updateActiveStep() {
   formSteps.forEach(step => { step.classList.remove('active') })
   if (currentStep == formSteps.length) {
-    window.location.href = '../index.html'
+    globalBefore.classList.add('hidden')
+    globalDiv.classList.remove('hidden')
   } else {
-    formSteps[currentStep].classList.add('active');
+    formSteps[currentStep].classList.add('active')
   }
 
 }
 
-const progressStep = document.querySelectorAll('.steps-section');
+const progressStep = document.querySelectorAll('.steps-section')
 function updateProgresStep() {
   progressStep.forEach((step, index) => {
     step.classList.remove('active')

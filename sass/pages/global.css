@@ -88,6 +88,15 @@
   display: none;
 }
 
+@media (max-width: 400px) {
+  #container {
+    width: 90%;
+  }
+  #get-pdf a {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -242,6 +251,24 @@
   background-color: rgba(243, 126, 212, 0.15);
 }
 
+#global-before.hidden {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  #rules-form {
+    width: 90%;
+  }
+  #progress-step-bar {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    row-gap: 4px;
+  }
+  #progress-step-bar:before {
+    display: none;
+  }
+}
 body {
   display: flex;
   justify-content: center;

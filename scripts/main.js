@@ -1,4 +1,4 @@
-const form = document.getElementById('form')
+const form = document.querySelector('.main-form')
 const inputName = document.getElementById('name')
 const inputLastName = document.getElementById('lastname')
 const inputBirth = document.getElementById('birth')
@@ -97,7 +97,7 @@ function formatHeight(height) {
 }
 
 function formatPhoneNumber(number) {
-  const crudeNumber = (81987363068).toString()
+  const crudeNumber = (number).toString()
   const DDD = crudeNumber.substring(0, 2)
   const numberNine = crudeNumber.substring(2,3)
   const firstPart = crudeNumber.substring(3,7)
